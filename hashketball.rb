@@ -130,13 +130,13 @@ def num_points_scored(player)
      if data == team_data[:players]
         team_data[:players].each do |player_name,player_data|
           if player_name == player
-        player_data.each do |player_key, player_value|
+            player_data.each do |player_key, player_value|
                  if player_key == :points
                   return player_value
-                end
-              end
+                 end
+            end
           end
-        end
+         end
       end
     end
   end
